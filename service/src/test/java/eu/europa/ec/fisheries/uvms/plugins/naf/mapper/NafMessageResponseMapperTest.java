@@ -30,12 +30,12 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetIdType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementBaseType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementPoint;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementTypeType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.SetReportMovementType;
-import eu.europa.ec.fisheries.schema.exchange.plugin.types.v1.PluginType;
+import fish.focus.schema.exchange.movement.asset.v1.AssetIdType;
+import fish.focus.schema.exchange.movement.v1.MovementBaseType;
+import fish.focus.schema.exchange.movement.v1.MovementPoint;
+import fish.focus.schema.exchange.movement.v1.MovementTypeType;
+import fish.focus.schema.exchange.movement.v1.SetReportMovementType;
+import fish.focus.schema.exchange.plugin.types.v1.PluginType;
 import eu.europa.ec.fisheries.uvms.plugins.naf.constants.NafCode;
 import eu.europa.ec.fisheries.uvms.plugins.naf.exception.PluginException;
 import eu.europa.ec.fisheries.uvms.plugins.naf.util.DateUtil;

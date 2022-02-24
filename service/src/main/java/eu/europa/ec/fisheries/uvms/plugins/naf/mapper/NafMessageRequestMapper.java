@@ -16,13 +16,13 @@ import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
-import eu.europa.ec.fisheries.schema.exchange.common.v1.ReportType;
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetIdList;
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetIdType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementPoint;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementSourceType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementTypeType;
+import fish.focus.schema.exchange.common.v1.ReportType;
+import fish.focus.schema.exchange.movement.asset.v1.AssetIdList;
+import fish.focus.schema.exchange.movement.asset.v1.AssetIdType;
+import fish.focus.schema.exchange.movement.v1.MovementPoint;
+import fish.focus.schema.exchange.movement.v1.MovementSourceType;
+import fish.focus.schema.exchange.movement.v1.MovementType;
+import fish.focus.schema.exchange.movement.v1.MovementTypeType;
 import eu.europa.ec.fisheries.uvms.plugins.naf.constants.NafCode;
 
 /**

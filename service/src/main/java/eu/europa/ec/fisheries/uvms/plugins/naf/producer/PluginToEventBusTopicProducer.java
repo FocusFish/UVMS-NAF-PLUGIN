@@ -11,8 +11,8 @@ details. You should have received a copy of the GNU General Public License along
 
 package eu.europa.ec.fisheries.uvms.plugins.naf.producer;
 
-import eu.europa.ec.fisheries.uvms.commons.message.api.MessageConstants;
-import eu.europa.ec.fisheries.uvms.commons.message.impl.AbstractTopicProducer;
+import fish.focus.uvms.commons.message.api.MessageConstants;
+import fish.focus.uvms.commons.message.impl.AbstractTopicProducer;
 import javax.annotation.Resource;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;

@@ -7,7 +7,7 @@
     <packaging>war</packaging>
 
     <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.plugins</groupId>
+        <groupId>fish.focus.uvms.plugins</groupId>
         <artifactId>naf</artifactId>
         <version>3.1.11-SNAPSHOT</version>
     </parent>
@@ -34,65 +34,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <!-- USE following command to run this profile: mvn clean install -P generate-rest-doc -Dhostname=127.0.0.1 -Dport=8080  -->
-    <profiles>
-        <profile>
-            <id>generate-rest-doc</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.3.2</version>
-                        <executions>
-                            <execution>
-                                <id>generate-service-docs</id>
-                                <phase>generate-resources</phase>
-                                <configuration>
-                                    <doclet>com.carma.swagger.doclet.ServiceDoclet</doclet>
-                                    <docletArtifact>
-                                        <groupId>com.carma</groupId>
-                                        <artifactId>swagger-doclet</artifactId>
-                                        <version>1.0.4.1</version>
-                                    </docletArtifact>
-                                    <reportOutputDirectory>src/main/webapp</reportOutputDirectory>
-                                    <useStandardDocletOptions>false</useStandardDocletOptions>
-                                    <additionalparam>-apiVersion ${project.version}
-                                        -docBasePath http://${hostname}:${port}/${project.parent.artifactId}/apidocs
-                                        -apiBasePath http://${hostname}:${port}/${project.parent.artifactId}/rest</additionalparam>
-                                </configuration>
-                                <goals>
-                                    <goal>javadoc</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>com.google.code.maven-replacer-plugin</groupId>
-                        <artifactId>replacer</artifactId>
-                        <version>1.5.3</version>
-                        <executions>
-                            <execution>
-                                <phase>prepare-package</phase>
-                                <goals>
-                                    <goal>replace</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <file>${basedir}/src/main/webapp/apidocs/index.html</file>
-                            <replacements>
-                                <replacement>
-                                    <token>new ApiKeyAuthorization\("api_key", key, "query"\)</token>
-                                    <value>new ApiKeyAuthorization("Authorization", key, "header")</value>
-                                </replacement>
-                            </replacements>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles> 
 
 </project>

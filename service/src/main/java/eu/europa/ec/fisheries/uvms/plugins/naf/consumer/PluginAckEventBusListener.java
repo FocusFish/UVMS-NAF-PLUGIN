@@ -20,10 +20,10 @@ import javax.jms.TextMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import eu.europa.ec.fisheries.schema.exchange.registry.v1.ExchangeRegistryBaseRequest;
-import eu.europa.ec.fisheries.schema.exchange.registry.v1.RegisterServiceResponse;
-import eu.europa.ec.fisheries.schema.exchange.registry.v1.UnregisterServiceResponse;
-import eu.europa.ec.fisheries.uvms.exchange.model.mapper.JAXBMarshaller;
+import fish.focus.schema.exchange.registry.v1.ExchangeRegistryBaseRequest;
+import fish.focus.schema.exchange.registry.v1.RegisterServiceResponse;
+import fish.focus.schema.exchange.registry.v1.UnregisterServiceResponse;
+import fish.focus.uvms.exchange.model.mapper.JAXBMarshaller;
 import eu.europa.ec.fisheries.uvms.plugins.naf.StartupBean;
 
 public class PluginAckEventBusListener implements MessageListener {

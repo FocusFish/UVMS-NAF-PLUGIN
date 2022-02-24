@@ -11,11 +11,11 @@ copy of the GNU General Public License along with the IFDM Suite. If not, see <h
  */
 package eu.europa.ec.fisheries.uvms.plugins.naf.mapper;
 
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetId;
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetIdList;
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetIdType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.*;
-import eu.europa.ec.fisheries.schema.exchange.plugin.types.v1.PluginType;
+import fish.focus.schema.exchange.movement.asset.v1.AssetId;
+import fish.focus.schema.exchange.movement.asset.v1.AssetIdList;
+import fish.focus.schema.exchange.movement.asset.v1.AssetIdType;
+import fish.focus.schema.exchange.movement.v1.*;
+import fish.focus.schema.exchange.plugin.types.v1.PluginType;
 import eu.europa.ec.fisheries.uvms.plugins.naf.constants.NafCode;
 import eu.europa.ec.fisheries.uvms.plugins.naf.exception.PluginException;
 import eu.europa.ec.fisheries.uvms.plugins.naf.util.DateUtil;

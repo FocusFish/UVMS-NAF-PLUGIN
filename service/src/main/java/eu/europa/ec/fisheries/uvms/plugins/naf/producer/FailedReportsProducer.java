@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 import javax.ejb.Stateless;
 import javax.jms.Destination;
 import javax.jms.Queue;
-import eu.europa.ec.fisheries.uvms.commons.message.impl.AbstractProducer;
+import fish.focus.uvms.commons.message.impl.AbstractProducer;
 
 @Stateless
 public class FailedReportsProducer extends AbstractProducer {

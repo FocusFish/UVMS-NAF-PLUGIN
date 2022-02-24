@@ -11,7 +11,7 @@ copy of the GNU General Public License along with the IFDM Suite. If not, see <h
  */
 package eu.europa.ec.fisheries.uvms.plugins.naf.message;
 
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.RecipientInfoType;
+import fish.focus.schema.exchange.movement.v1.RecipientInfoType;
 import eu.europa.ec.fisheries.uvms.plugins.naf.StartupBean;
 import eu.europa.ec.fisheries.uvms.plugins.naf.constants.NafConfigKeys;
 import eu.europa.ec.fisheries.uvms.plugins.naf.exception.PluginException;

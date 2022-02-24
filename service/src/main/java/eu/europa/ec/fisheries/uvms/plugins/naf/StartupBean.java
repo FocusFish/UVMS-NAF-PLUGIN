@@ -11,13 +11,13 @@ copy of the GNU General Public License along with the IFDM Suite. If not, see <h
  */
 package eu.europa.ec.fisheries.uvms.plugins.naf;
 
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.SetReportMovementType;
-import eu.europa.ec.fisheries.schema.exchange.plugin.types.v1.PluginType;
-import eu.europa.ec.fisheries.schema.exchange.service.v1.CapabilityListType;
-import eu.europa.ec.fisheries.schema.exchange.service.v1.ServiceType;
-import eu.europa.ec.fisheries.schema.exchange.service.v1.SettingListType;
-import eu.europa.ec.fisheries.uvms.exchange.model.constant.ExchangeModelConstants;
-import eu.europa.ec.fisheries.uvms.exchange.model.mapper.ExchangeModuleRequestMapper;
+import fish.focus.schema.exchange.movement.v1.SetReportMovementType;
+import fish.focus.schema.exchange.plugin.types.v1.PluginType;
+import fish.focus.schema.exchange.service.v1.CapabilityListType;
+import fish.focus.schema.exchange.service.v1.ServiceType;
+import fish.focus.schema.exchange.service.v1.SettingListType;
+import fish.focus.uvms.exchange.model.constant.ExchangeModelConstants;
+import fish.focus.uvms.exchange.model.mapper.ExchangeModuleRequestMapper;
 import eu.europa.ec.fisheries.uvms.plugins.naf.mapper.ServiceMapper;
 import eu.europa.ec.fisheries.uvms.plugins.naf.producer.PluginToEventBusTopicProducer;
 import eu.europa.ec.fisheries.uvms.plugins.naf.service.ExchangeService;

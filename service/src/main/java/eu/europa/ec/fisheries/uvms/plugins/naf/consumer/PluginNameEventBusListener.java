@@ -11,11 +11,11 @@ copy of the GNU General Public License along with the IFDM Suite. If not, see <h
  */
 package eu.europa.ec.fisheries.uvms.plugins.naf.consumer;
 
-import eu.europa.ec.fisheries.schema.exchange.common.v1.AcknowledgeType;
-import eu.europa.ec.fisheries.schema.exchange.common.v1.AcknowledgeTypeType;
-import eu.europa.ec.fisheries.schema.exchange.plugin.v1.*;
-import eu.europa.ec.fisheries.uvms.exchange.model.mapper.ExchangePluginResponseMapper;
-import eu.europa.ec.fisheries.uvms.exchange.model.mapper.JAXBMarshaller;
+import fish.focus.schema.exchange.common.v1.AcknowledgeType;
+import fish.focus.schema.exchange.common.v1.AcknowledgeTypeType;
+import fish.focus.schema.exchange.plugin.v1.*;
+import fish.focus.uvms.exchange.model.mapper.ExchangePluginResponseMapper;
+import fish.focus.uvms.exchange.model.mapper.JAXBMarshaller;
 import eu.europa.ec.fisheries.uvms.plugins.naf.StartupBean;
 import eu.europa.ec.fisheries.uvms.plugins.naf.producer.PluginToExchangeProducer;
 import eu.europa.ec.fisheries.uvms.plugins.naf.service.PluginService;

@@ -18,8 +18,8 @@ import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementBaseType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.SetReportMovementType;
+import fish.focus.schema.exchange.movement.v1.MovementBaseType;
+import fish.focus.schema.exchange.movement.v1.SetReportMovementType;
 
 /**
  **/
@@ -27,7 +27,7 @@ public abstract class PluginDataHolder {
 
     private Object lock = new Object();
 
-    static final String PLUGIN_PROPERTIES = "naf.properties";
+    static final String PLUGIN_PROPERTIES = "plugin.properties";
     static final String PROPERTIES = "settings.properties";
     static final String CAPABILITIES = "capabilities.properties";
 

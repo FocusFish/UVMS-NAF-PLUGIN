@@ -18,17 +18,17 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
-import eu.europa.ec.fisheries.schema.exchange.common.v1.ReportType;
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetId;
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetIdList;
-import eu.europa.ec.fisheries.schema.exchange.movement.asset.v1.AssetIdType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementActivityType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementActivityTypeType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementPoint;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.MovementTypeType;
-import eu.europa.ec.fisheries.schema.exchange.movement.v1.RecipientInfoType;
-import eu.europa.ec.fisheries.uvms.commons.date.DateUtils;
+import fish.focus.schema.exchange.common.v1.ReportType;
+import fish.focus.schema.exchange.movement.asset.v1.AssetId;
+import fish.focus.schema.exchange.movement.asset.v1.AssetIdList;
+import fish.focus.schema.exchange.movement.asset.v1.AssetIdType;
+import fish.focus.schema.exchange.movement.v1.MovementActivityType;
+import fish.focus.schema.exchange.movement.v1.MovementActivityTypeType;
+import fish.focus.schema.exchange.movement.v1.MovementPoint;
+import fish.focus.schema.exchange.movement.v1.MovementType;
+import fish.focus.schema.exchange.movement.v1.MovementTypeType;
+import fish.focus.schema.exchange.movement.v1.RecipientInfoType;
+import fish.focus.uvms.commons.date.DateUtils;
 import eu.europa.ec.fisheries.uvms.plugins.naf.constants.NafCode;
 
 /**
