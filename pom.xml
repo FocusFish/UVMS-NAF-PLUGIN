@@ -8,7 +8,7 @@
 		<version>3.16</version>
 	</parent>
 
-    <groupId>fish.focus.uvms.plugins.naf</groupId>
+    <groupId>fish.focus.uvms.plugins</groupId>
     <artifactId>naf</artifactId>
     <version>3.1.11-SNAPSHOT</version>
     <packaging>pom</packaging>
