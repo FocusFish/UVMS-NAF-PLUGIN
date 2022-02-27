@@ -27,7 +27,7 @@ public abstract class PluginDataHolder {
 
     private Object lock = new Object();
 
-    static final String PLUGIN_PROPERTIES = "naf.properties";
+    static final String PLUGIN_PROPERTIES = "plugin.properties";
     static final String PROPERTIES = "settings.properties";
     static final String CAPABILITIES = "capabilities.properties";
 
