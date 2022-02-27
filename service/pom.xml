@@ -7,9 +7,9 @@
     <packaging>ejb</packaging>
 
     <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.plugins</groupId>
+        <groupId>fish.focus.uvms.plugins.naf</groupId>
         <artifactId>naf</artifactId>
-        <version>3.1.11-SNAPSHOT</version>
+        <version>3.1.11</version>
     </parent>
 
     <properties>
@@ -21,25 +21,15 @@
         <application.destination.jndi>jms:/jms/topic/EventBus</application.destination.jndi>
     </properties>
 
-    <profiles>
-        <profile>
-            <id>weblogic</id>
-            <properties>
-                <application.connection.factory>ConnectionFactory</application.connection.factory>
-                <application.destination.jndi>jms/topic/EventBus</application.destination.jndi>
-            </properties>
-        </profile>
-    </profiles>
-
     <dependencies>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.exchange</groupId>
+            <groupId>fish.focus.uvms.exchange</groupId>
             <artifactId>exchange-model</artifactId>
             <version>${exchange.model.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-message</artifactId>
             <version>${uvms.common.version}</version>
         </dependency>
