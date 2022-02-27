@@ -9,7 +9,7 @@
     <parent>
         <groupId>fish.focus.uvms.plugins.naf</groupId>
         <artifactId>naf</artifactId>
-        <version>3.1.11</version>
+        <version>3.1.12-SNAPSHOT</version>
     </parent>
 
     <build>
