@@ -10,17 +10,18 @@
 
     <groupId>fish.focus.uvms.plugins.naf</groupId>
     <artifactId>naf</artifactId>
+    <name>naf</name>
     <version>3.1.14-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Plugin template</description>
-    
+
     <properties>
         <uvms.common.version>4.1.15</uvms.common.version>
         <exchange.model.version>5.3.32</exchange.model.version>
 
         <project.scm.id>github</project.scm.id>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>jakarta.platform</groupId>
@@ -51,7 +52,7 @@
         <connection>scm:git:https://github.com/FocusFish/UVMS-NAF-PLUGIN.git</connection>
         <tag>HEAD</tag>
     </scm>
-        
+
     <modules>
         <module>service</module>
         <module>rest</module>

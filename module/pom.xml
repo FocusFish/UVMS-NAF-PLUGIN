@@ -22,7 +22,7 @@
                 <configuration>
                     <modules>
                         <ejbModule>
-                            <groupId>${project.groupId}</groupId>  
+                            <groupId>${project.groupId}</groupId>
                             <artifactId>naf-service</artifactId>
                         </ejbModule>
                         <webModule>
@@ -45,13 +45,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>  
+            <groupId>${project.groupId}</groupId>
             <artifactId>naf-service</artifactId>
             <version>${project.version}</version>
             <type>ejb</type>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>  
+            <groupId>${project.groupId}</groupId>
             <artifactId>naf-rest</artifactId>
             <version>${project.version}</version>
             <type>war</type>
@@ -62,7 +62,7 @@
         <profile>
             <id>wildfly-deploy</id>
             <build>
-                <plugins>	
+                <plugins>
                     <plugin>
                         <groupId>org.wildfly.plugins</groupId>
                         <artifactId>wildfly-maven-plugin</artifactId>
@@ -80,6 +80,6 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>  
+    </profiles>
 
 </project>
