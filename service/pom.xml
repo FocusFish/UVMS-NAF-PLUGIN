@@ -9,13 +9,13 @@
     <parent>
         <groupId>fish.focus.uvms.plugins.naf</groupId>
         <artifactId>naf</artifactId>
-        <version>3.1.13</version>
+        <version>3.2.0</version>
     </parent>
 
     <properties>
-        <application.name>${project.parent.artifactId}</application.name> 
-        <application.responseTopicName>PLUGIN_RESPONSE</application.responseTopicName> 
-        <application.groupid>${project.parent.groupId}</application.groupid> 
+        <application.name>${project.parent.artifactId}</application.name>
+        <application.responseTopicName>PLUGIN_RESPONSE</application.responseTopicName>
+        <application.groupid>${project.parent.groupId}</application.groupid>
 
         <application.connection.factory>jms:/ConnectionFactory</application.connection.factory>
         <application.destination.jndi>jms:/jms/topic/EventBus</application.destination.jndi>
@@ -34,7 +34,7 @@
             <version>${uvms.common.version}</version>
         </dependency>
     </dependencies>
-    
+
     <build>
         <finalName>${project.name}-${project.version}</finalName>
         <plugins>

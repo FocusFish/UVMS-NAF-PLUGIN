@@ -5,22 +5,23 @@
 		<groupId>fish.focus.uvms.maven</groupId>
 		<artifactId>uvms-pom</artifactId>
 		<relativePath />
-		<version>3.19</version>
+		<version>3.33</version>
 	</parent>
 
     <groupId>fish.focus.uvms.plugins.naf</groupId>
     <artifactId>naf</artifactId>
-    <version>3.1.13</version>
+    <name>naf</name>
+    <version>3.2.0</version>
     <packaging>pom</packaging>
     <description>Plugin template</description>
-    
+
     <properties>
-        <uvms.common.version>4.1.12</uvms.common.version>
-        <exchange.model.version>5.3.27</exchange.model.version>
+        <uvms.common.version>4.1.15</uvms.common.version>
+        <exchange.model.version>5.4.0</exchange.model.version>
 
         <project.scm.id>github</project.scm.id>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>jakarta.platform</groupId>
@@ -37,7 +38,7 @@
             <groupId>fish.focus.uvms.maven</groupId>
             <artifactId>uvms-pom-java11-deps</artifactId>
             <type>pom</type>
-            <version>3.19</version>
+            <version>3.33</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -51,7 +52,7 @@
         <connection>scm:git:https://github.com/FocusFish/UVMS-NAF-PLUGIN.git</connection>
         <tag>HEAD</tag>
     </scm>
-        
+
     <modules>
         <module>service</module>
         <module>rest</module>

@@ -9,7 +9,7 @@
     <parent>
         <groupId>fish.focus.uvms.plugins.naf</groupId>
         <artifactId>naf</artifactId>
-        <version>3.1.13</version>
+        <version>3.2.0</version>
     </parent>
 
     <build>
@@ -22,7 +22,7 @@
                 <configuration>
                     <modules>
                         <ejbModule>
-                            <groupId>${project.groupId}</groupId>  
+                            <groupId>${project.groupId}</groupId>
                             <artifactId>naf-service</artifactId>
                         </ejbModule>
                         <webModule>
@@ -45,13 +45,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>  
+            <groupId>${project.groupId}</groupId>
             <artifactId>naf-service</artifactId>
             <version>${project.version}</version>
             <type>ejb</type>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>  
+            <groupId>${project.groupId}</groupId>
             <artifactId>naf-rest</artifactId>
             <version>${project.version}</version>
             <type>war</type>
@@ -62,11 +62,11 @@
         <profile>
             <id>wildfly-deploy</id>
             <build>
-                <plugins>	
+                <plugins>
                     <plugin>
                         <groupId>org.wildfly.plugins</groupId>
                         <artifactId>wildfly-maven-plugin</artifactId>
-                        <version>4.2.1.Final</version>
+                        <version>5.1.3.Final</version>
                         <configuration>
                             <filename>${project.build.finalName}.${project.packaging}</filename>
                             <targetDir>${project.build.directory}</targetDir>
@@ -80,6 +80,6 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>  
+    </profiles>
 
 </project>
